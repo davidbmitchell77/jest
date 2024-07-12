@@ -27,7 +27,7 @@ describe('c-hello-world test suite', () => {
         expect(div.textContent).toBe('Hello, world!');
     });
 
-    test('text not equals \'Hello, Joe\'', () => {
+    test('text not equals \'Hello, Joe!\'', () => {
         const element = document.querySelector('div')[0];
         const div = element.shadowRoot('div');
         expect(div.textContent).not.toBe('Hello, Joe, what do you know?!');
