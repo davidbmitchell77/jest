@@ -44,5 +44,4 @@ describe('c-hello-world test suite', () => {
             expect(text.textContent).toBe('Hello again!');
         }
     });
-
 });
