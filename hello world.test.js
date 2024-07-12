@@ -7,7 +7,6 @@ describe('c-hello-world test suite', () => {
             is: HelloWorld
         });
         document.body.appendChild(element);
-        const div = element.shadowRoot.querySelectorAll('div')[0];
     });
 
     afterEach(() => {
@@ -38,7 +37,7 @@ describe('c-hello-world test suite', () => {
         const input = element.shadowRoot('lightning-input');
         input.value = 'Hello again!';
         input.dispatchEvent(new CustomEvent('change'));
-        const text = element.shadowRoot('lightning-input');
+        const text = element.shadowRoot('p');
         return Promise.resolve.then(() => {
             expect(text.textContent).toBe('Hello again!');
         }
