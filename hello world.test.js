@@ -1,4 +1,4 @@
-import { createElement } from '/lwc/';
+import { createElement } from 'lwc';
 import HelloWorld from 'c/helloWorld';
 
 describe('c-hello-world test suite', () => {
