@@ -52,5 +52,6 @@ describe('nested-component-demo test suite', () => {
     test('userDetail variable data is correct', () => {
         const parentComponent = document.querySelector('nested-component-demo');
         const childComponent  = parentComponent.shadowRoot.querySelector('c-child-component');
+        expect(childComponent.userDetail.name).toBe('David');
     });
 });
