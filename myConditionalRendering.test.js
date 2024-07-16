@@ -51,9 +51,7 @@ describe('c-my-conditional-rendering', () => {
 import { LightningElement } from 'lwc';
 
 export default class MyConditionalRendering extends LightningElement {
-
     isVisible = false;
-
     handleChange(event) {
         this.isVisible = event.target.checked;
     }
