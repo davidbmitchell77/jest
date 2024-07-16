@@ -57,6 +57,11 @@ export default class ChildComponent extends LightningDataElement {
 
 import { createElement} from 'lwc';
 import ChildComponent from 'c/childComponent';
-describe('', () => {
-    
+describe('c-child-component test suite', () => {
+    beforeEach(() => {
+        const element = createElement('c-child-component', {
+            is: ChildComponent
+        });
+        documemt.body.appendChild(element);
+    });
 });
