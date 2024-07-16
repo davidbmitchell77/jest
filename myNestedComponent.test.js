@@ -8,5 +8,10 @@
 
 
 import { LightningDataElement } from 'lwc';
+const DATA = {
+    id: '1',
+    name: 'David'
+};
 export default class NestedComponentDemo extends LightningDataElement {
+    userData = { ...DATA };
 }
