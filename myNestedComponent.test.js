@@ -5,3 +5,8 @@
         </div>
     </lightning-card>
 </template>
+
+
+import { LightningDataElement } from 'lwc';
+export default class NestedComponentDemo extends LightningDataElement {
+}
