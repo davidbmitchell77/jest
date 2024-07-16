@@ -15,21 +15,6 @@ export default class NestedComponentDemo extends LightningDataElement {
     userData = { ...DATA };
 }
 
-
-<template>
-    <template if:true={userDetail}>
-        <div>{userDetail.name}</div>
-    </template>
-    <template if:false={userDetail}>
-        <p>No user data available.</p>
-    </template>
-</template>
-
-import { LightningDataElement, api  } from 'lwc';
-export default class ChildComponent extends LightningDataElement {
-    @api userDetail;
-}
-
 import { createElement } from 'lwc';
 import NestedComponentDemo from 'c/nestedComponentDemo';
 describe('nested-component-demo test suite', () => {
@@ -53,4 +38,25 @@ describe('nested-component-demo test suite', () => {
         const childComponent  = parentComponent.shadowRoot.querySelector('c-child-component');
         expect(childComponent.userDetail.name).toBe('David');
     });
+});
+
+
+<template>
+    <template if:true={userDetail}>
+        <div>{userDetail.name}</div>
+    </template>
+    <template if:false={userDetail}>
+        <p>No user data available.</p>
+    </template>
+</template>
+
+import { LightningDataElement, api  } from 'lwc';
+export default class ChildComponent extends LightningDataElement {
+    @api userDetail;
+}
+
+import { createElement} from 'lwc';
+import ChildComponent from 'c/childComponent';
+describe('', () => {
+    
 });
