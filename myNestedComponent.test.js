@@ -81,6 +81,7 @@ describe('c-child-component test suite', () => {
     });
     test('\'no user data available\' message renders when no data', {
         const element = document.querySelector('c-child-component');
+        element.userDetail = {};
         const p = element.shadowRoot.querySelector('p');
         expect(p.textContent).toBe('No user data available.');
     });
