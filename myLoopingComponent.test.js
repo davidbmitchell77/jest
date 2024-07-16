@@ -57,14 +57,12 @@ describe('my-looping-component test suite', () => {
 
 
 import { LightningElement } from 'lwc';
-
 const DATA = [
     { id: '1', name: 'Gene'  },
     { id: '2', name: 'Paul'  },
     { id: '3', name: 'Ace'   },
     { id: '4', name: 'Peter' }
 ];
-
 export default class MyLoopingComponent extends LightningElement {
     userDetails = [ ...DATA ];
 }
