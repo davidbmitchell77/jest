@@ -5,6 +5,7 @@
                 <li key={id}>{u.name}</li>
             </div>
         </div>
+        <div class="slds-var-m-around_medium">
             <div class="iterator" iterator:user={userDetails}>
                 <li key={user.value.id}>
                     <div class="slds-text-heading_large" if:true={user.first}>BEGIN LIST</div>
