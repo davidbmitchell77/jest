@@ -23,4 +23,13 @@ export default class NestedComponentDemo extends LightningDataElement {
             <div>{userDetail.name}</div>
         </lighting-layout>
     </template>
+    <template if:false={userDetail}>
+        <p>No user data available.</p>
+    </template>
 </template>
+
+
+import { LightningDataElement, api  } from 'lwc';
+export default class ChildComponent extends LightningDataElement {
+    @api userDetail;
+}
