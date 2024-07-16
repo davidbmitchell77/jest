@@ -1,3 +1,11 @@
+<template>
+    <lightning-card title="Hello, World!" icon-name:"standard:contact">
+        <div class="slds-var-m-around_medium">
+    </div>
+    </lightning-card>
+</template>
+
+
 import { createElement } from 'lwc';
 import HelloWorld from 'c/helloWorld';
 
