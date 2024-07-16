@@ -64,4 +64,9 @@ describe('c-child-component test suite', () => {
         });
         documemt.body.appendChild(element);
     });
+    afterEach(() => {
+        while (document.body.firstChild) {
+            document.body.remove(document.body.firstChild);
+        }
+    });
 });
