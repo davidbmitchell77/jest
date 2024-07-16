@@ -1,7 +1,7 @@
 <template>
     <lightning-card title="Hello, World!" icon-name:"standard:contact">
         <div class="slds-var-m-around_medium">
-    </div>
+        </div>
     </lightning-card>
 </template>
 
