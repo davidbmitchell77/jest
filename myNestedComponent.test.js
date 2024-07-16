@@ -79,4 +79,9 @@ describe('c-child-component test suite', () => {
         const div = element.shadowRoot.querySelector('div');
         expect(div.textContent).toBe(USER_DETAIL.name);
     });
+    test('\'no user data available\' message renders when no data', {
+        const element = document.querySelector('c-child-component');
+        const p = element.shadowRoot.querySelector('p');
+        expect(p.textContent).toBe('No user data available.');
+    });
 });
