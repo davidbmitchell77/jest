@@ -30,7 +30,6 @@ export default class ChildComponent extends LightningDataElement {
     @api userDetail;
 }
 
-
 import { createElement } from 'lwc';
 import NestedComponentDemo from 'c/nestedComponentDemo';
 describe('nested-component-demo test suite', () => {
