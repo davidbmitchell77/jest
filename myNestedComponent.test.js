@@ -41,6 +41,6 @@ describe('nested-component-demo test suite', () => {
     });
     afterEach(() => {
         while(document.body.firstChild) {
-            document.remove(document.body.firstChild);
+            document.body.remove(document.body.firstChild);
     });
 });
