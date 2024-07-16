@@ -44,3 +44,10 @@ describe('c-hello-world test suite', () => {
         }
     });
 });
+
+
+import { LightningElement } from 'lwc';
+import HellowWorld          from 'c/helloWorld';
+
+export default class HelloWorld extends LightningElement {
+}
