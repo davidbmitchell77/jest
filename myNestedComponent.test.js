@@ -29,3 +29,10 @@ import { LightningDataElement, api  } from 'lwc';
 export default class ChildComponent extends LightningDataElement {
     @api userDetail;
 }
+
+
+import { createElement } from 'lwc';
+import NestedComponentDemod from 'c/nestedComponentDemo';
+describe('nested-component-demo test suite', ()=>{
+    
+});
