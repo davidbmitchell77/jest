@@ -19,7 +19,7 @@ import { LightningElement, wire } from 'lwc';
 import { showToast              } from 'c/utils';
 import getContacts                from '@salesforce/apex/ContactController.getContacts';
 
-export default class ContactList extends LightningElement {
+export default class MyWireAdapterComponent extends LightningElement {
     contacts = [];
     error = undefined;
 
