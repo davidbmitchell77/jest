@@ -11,13 +11,13 @@ describe('c-my-conditional-rendering', () => {
     });
 
     test('don't show the password', () => {
-        const element = document.querySelector('c-my-conditional-rendering'');
+        const element = document.querySelector('c-my-conditional-rendering');
         const password = element.shadowRoot.querySelector('.userinfo');
         expect(password.textContent).toBe('My password is: ***********');
     });
 
     test('show the password when checkbox is checked', () => {
-        const element = document.querySelector('c-my-conditional-rendering'');
+        const element = document.querySelector('c-my-conditional-rendering');
         const input = element.shadowRoot.querySelector('lightning-input');
         input.checked = true;
         input.dispatchEvent(new CustomEvent('change'));
