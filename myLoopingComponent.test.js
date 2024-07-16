@@ -28,6 +28,12 @@ describe('my-looping-component test suite', () => {
         document.body.appendChild(element);
     });
 
+    afterEach(() => {
+        while(document.body.firstChild) {
+            document.body.remove(document.body.firstChild);
+        }
+    });
+
     test('check user list length', () => {
         const element = document.querySelector('c-my-looping-component');
         const userDetails = Array.from(element.shadowRoot.querySelectorAll('.forEach>li'));
