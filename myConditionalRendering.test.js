@@ -27,6 +27,12 @@ describe('c-my-conditional-rendering', () => {
         document.body.appendChild(element);
     });
 
+    afterEach(() => {
+        while(document.body.firstChild) {
+            document.body.remove(document.body.firstChild);
+        }
+    });
+
     test('don't show the password', () => {
         const element = document.querySelector('c-my-conditional-rendering');
         const password = element.shadowRoot.querySelector('.userinfo');
