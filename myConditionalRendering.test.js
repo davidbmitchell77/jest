@@ -52,7 +52,9 @@ import { LightningElement } from 'lwc';
 export default class MyConditionalRendering extends LightningElement {
     isVisible = false;
     handleChange(event) {
-        this.isVisible = event.target.checked;
+        if (event.target.label == 'Show password') {
+            this.isVisible = event.target.checked;
+        }
     }
 }
 */
