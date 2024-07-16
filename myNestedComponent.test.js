@@ -6,7 +6,6 @@
     </lightning-card>
 </template>
 
-
 import { LightningDataElement } from 'lwc';
 const DATA = {
     id: '1',
@@ -27,7 +26,6 @@ export default class NestedComponentDemo extends LightningDataElement {
         <p>No user data available.</p>
     </template>
 </template>
-
 
 import { LightningDataElement, api  } from 'lwc';
 export default class ChildComponent extends LightningDataElement {
