@@ -40,7 +40,7 @@ describe('nested-component-demo test suite', () => {
         });
     });
     afterEach(() => {
-        while(document.body.firstChild) {
+        while (document.body.firstChild) {
             document.body.remove(document.body.firstChild);
     });
 });
