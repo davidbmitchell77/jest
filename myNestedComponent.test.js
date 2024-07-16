@@ -34,5 +34,7 @@ export default class ChildComponent extends LightningDataElement {
 import { createElement } from 'lwc';
 import NestedComponentDemod from 'c/nestedComponentDemo';
 describe('nested-component-demo test suite', ()=>{
-    
+    beforeEach(() => {
+        const document = createElement('nested-component-demo');
+    });
 });
