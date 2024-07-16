@@ -18,9 +18,7 @@ export default class NestedComponentDemo extends LightningDataElement {
 
 <template>
     <template if:true={userDetail}>
-        <lightning-layout-item vertical-align="center">
-            <div>{userDetail.name}</div>
-        </lighting-layout>
+        <div>{userDetail.name}</div>
     </template>
     <template if:false={userDetail}>
         <p>No user data available.</p>
