@@ -76,5 +76,7 @@ describe('c-child-component test suite', () => {
     test('name renders correctly', () => {
         const element = document.querySelector('c-child-component');
         element.userDetail = { ...USER_DETAIL };
+        const div = element.shadowRoot.querySelector('div');
+        expect(div.textContent).toBe(USER_DETAIL.name);
     });
 });
