@@ -35,9 +35,10 @@ import { createElement } from 'lwc';
 import NestedComponentDemo from 'c/nestedComponentDemo';
 describe('nested-component-demo test suite', () => {
     beforeEach(() => {
-        const document = createElement('nested-component-demo', {
+        const element = createElement('nested-component-demo', {
             is: NestedComponentDemo
         });
+        document.body.appendChild(element);
     });
     afterEach(() => {
         while (document.body.firstChild) {
