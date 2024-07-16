@@ -57,6 +57,10 @@ export default class ChildComponent extends LightningDataElement {
 
 import { createElement} from 'lwc';
 import ChildComponent from 'c/childComponent';
+const USER_DETAIL = {
+    id: '1',
+    name: 'David'
+};
 describe('c-child-component test suite', () => {
     beforeEach(() => {
         const element = createElement('c-child-component', {
@@ -68,5 +72,9 @@ describe('c-child-component test suite', () => {
         while (document.body.firstChild) {
             document.body.remove(document.body.firstChild);
         }
+    });
+    test('name renders correctly', () => {
+        const element = document.querySelector('c-child-component');
+        element.userDetail = { ...USER_DETAIL };
     });
 });
