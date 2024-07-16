@@ -44,4 +44,8 @@ describe('nested-component-demo test suite', () => {
         while (document.body.firstChild) {
             document.body.remove(document.body.firstChild);
     });
+    test('test child component is rendered', () => {
+        const parentElement = document.querySelector('nested-component-demo');
+        const childElement = parentElement.shadowRoot.querySelectorAll('c-child-component');
+    });
 });
