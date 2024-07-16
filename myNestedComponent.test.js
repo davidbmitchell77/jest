@@ -46,6 +46,7 @@ describe('nested-component-demo test suite', () => {
     });
     test('test child component is rendered', () => {
         const parentElement = document.querySelector('nested-component-demo');
-        const childElement = parentElement.shadowRoot.querySelectorAll('c-child-component');
+        const childElements = parentElement.shadowRoot.querySelectorAll('c-child-component');
+        expect(childElements.length).toBe(1);
     });
 });
