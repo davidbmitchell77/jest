@@ -15,3 +15,12 @@ const DATA = {
 export default class NestedComponentDemo extends LightningDataElement {
     userData = { ...DATA };
 }
+
+
+<template>
+    <template if:true={userDetail}>
+        <lightning-layout-item vertical-align="center">
+            <div>{userDetail.name}</div>
+        </lighting-layout>
+    </template>
+</template>
