@@ -45,8 +45,12 @@ describe('nested-component-demo test suite', () => {
             document.body.remove(document.body.firstChild);
     });
     test('test child component is rendered', () => {
-        const parentElement = document.querySelector('nested-component-demo');
-        const childElements = parentElement.shadowRoot.querySelectorAll('c-child-component');
-        expect(childElements.length).toBe(1);
+        const parentComponent = document.querySelector('nested-component-demo');
+        const childComponents = parentComponent.shadowRoot.querySelectorAll('c-child-component');
+        expect(childComponents.length).toBe(1);
+    });
+    test('userDetail variable data is correct', () => {
+        const parentComponent = document.querySelector('nested-component-demo');
+        const childComponent  = parentComponent.shadowRoot.querySelector('c-child-component');
     });
 });
