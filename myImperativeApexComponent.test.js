@@ -71,7 +71,7 @@ import MyImperativeApexComponent from 'c/MyImperativeApexComponent';
 const MOCK_ACCOUNT_DATA = require(./data/accounts.json);
 const MOCK_ERROR_OBJECT = require(./data/error.json);
 
-jest.mock('@salesforce/apex/AccountController.getAccounts', () => ({ default: jest.fn() }), { virtual: true });
+jest.mock('@salesforce/apex/AccountController.getAccounts', (() => { default: jest.fn() }), { virtual: true });
 
 describe('c-my-imperative-apex-component test suite', () => {
     beforeEach(() => {
