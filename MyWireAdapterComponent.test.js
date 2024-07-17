@@ -103,15 +103,15 @@ public with sharing class ContactController {
 
 ./__tests__/data/contacts.json:
 [
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } },
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } },
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } },
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } },
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } },
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } },
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } },
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } },
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } },
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } },
-    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Name: '' } }
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } },
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } },
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } },
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } },
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } },
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } },
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } },
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } },
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } },
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } },
+    { Id: '', Name: '', Title: '', Phone: '', Email: '', Account: { Id: '', Name: '' } }
 ]
